@@ -20,8 +20,8 @@ resource "google_compute_instance" "nginx" {
   network_interface {
     network    = module.network.network_name
     subnetwork = module.network.subnets_names[0]
-    access_config {//public ip
-      
+    access_config { //public ip
+
     }
   }
 

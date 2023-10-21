@@ -53,7 +53,7 @@ resource "google_compute_firewall" "http" {
     ports    = ["80"]
   }
 
-  target_tags = [ "http-server" ]
+  target_tags   = ["http-server"]
   priority      = 1000
   source_ranges = ["0.0.0.0/0"]
 }
@@ -67,7 +67,7 @@ resource "google_compute_firewall" "https" {
     ports    = ["443"]
   }
 
-  target_tags = [ "https-server" ]
+  target_tags   = ["https-server"]
   priority      = 1000
   source_ranges = ["0.0.0.0/0"]
 }
